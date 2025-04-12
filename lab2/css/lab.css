@@ -3,7 +3,7 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
 body {
-  font-family: 'Times New Roman', Times, serif
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 body{
@@ -21,5 +21,5 @@ body{
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #1F4373;
-    background-color: #c0bdc0;
+    background-color: #e8e4e8;
   }
