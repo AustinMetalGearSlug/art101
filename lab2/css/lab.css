@@ -6,6 +6,12 @@ body{
   margin: 0 auto ;
 }
 
+.minor-section{
+  padding: 10;
+   margin: 10;
+   background-color: #B7B1AE;
+}
+  
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
