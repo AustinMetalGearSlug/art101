@@ -7,11 +7,10 @@ body{
 }
 
 .minor-section{
-  padding: 10;
-   margin: 10;
-   background-color: #B7B1AE;
+  padding: 10px;
+  margin-bottom: 10;
+  background-color: #f8f0f0;
 }
-  
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
