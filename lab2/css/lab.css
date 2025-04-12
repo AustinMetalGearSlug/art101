@@ -3,7 +3,7 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
 h1,h2,h3 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 body{
