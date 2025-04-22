@@ -28,7 +28,11 @@ Start
 //create the game board: 10 x 10 hex grid with empty values 
 
 //User Character Creation 
-//to make your character,the user has a base state of 10 and can from 1 to 10 points to add for the stats and have 50 points to spend. ST, DX, IQ and HT are the player stats, (ST) stands for strength determines how strong a character is and how much damage they can deal, (DX) stands for dexterity for skills, physical rolls and counter maneuvers (IQ) determines intelligence and perception rolls, (HT) determines health rolls and how much damage the can take before dying.
+//to make your character,the user has a base state of 10 and can from 1 to 10 points to add for the stats and have 35 points to spend. ST, DX, IQ and HT are the player stats, 
+// (ST) stands for strength determines how strong a character is and how much damage
+// they can deal, (DX) stands for dexterity for skills, physical rolls and counter 
+// maneuvers (IQ) determines intelligence and perception rolls, (HT) determines health 
+// rolls and how much damage the can take before dying.
  
  //Dice Roll Function
            //to play GURPS, player and DM will roll a 3D6 to determine action outcomes
@@ -45,8 +49,7 @@ Start
 //alternate turns between user and computer. 
 // if the user role is at or below their skill level, their role is success. If user role is more
 // than their skill level the role is unsuccessful 
-          // Validate user input, if player is attacking a NPC with a weapon their success is  determined by the skill level of their DX,
-          //  if user DX skill is 14 and player rolls a 10 the role is successful 
+          // Validate user input, if player is attacking a NPC with a weapon their success is  determined by the skill level of their DX, if user DX skill is 14 and player rolls a 10 the     role is successful 
 //console.log (“you rolled a 3D6, and got…”, rollD6()) 
 // evaluate computer possibilities, dodge, block from user actions. 
    //determine and summarize from events and proceed 
