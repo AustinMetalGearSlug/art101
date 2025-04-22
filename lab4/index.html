@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 4 - Subject/Topic</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -23,30 +23,87 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
+			<h1>Lab 4 - Pseudocoding and Problem-solving</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
 					<p>Restate the challenge of the lab here.</p>
+					<p>- Our challenege for this lab was to create pseudocoding in javascript. One code for a everytask
+						and another code in for a computer game.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
 					<p>What problems arose? How did you solve them? </p>
+					<p>- While working on our lab the main issue I faced was how to and write and us javascript which
+						was difficult but I looked at online sources how D20, a similar text based RPG game using javascript was made also the 
+						WesBot to see how to strucute and fortmat some lines of code such as how to make a function to roll 3D6. 
+					</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into th assignment? </p>
+					<p>- The lab wasn't to bad it was mainly making sure of following the assignment and making sure I followed the format 
+						and file hierarchy is also correctly formated </p>
+					</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
+					<p>- Below I have a screenshot of the pseucode for the GURPS computer game and also the code itself</p>
 					<div id="output"></div>
 			</div>
-		</section>
-		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
-		</nav>
+			
+			<div class="minor-section">
+				<h2>Javascript and Pseucode for GURPS Text Based RPG</h2>
+				<pre><code>
+				//pseudocode GURPS text based roleplaying game 
+
+				Start
+				//set the stage 
+				create the game board: 10 x 10 hex grid with empty values 
+				
+				//User Character Creation 
+				//to make your character,the user has a base state of 10 and can from 1 to 10 points to add for the stats and have 50 points to spend. ST, DX, IQ and HT are the player stats, (ST) stands for strength determines how strong a character is and how much damage they can deal, (DX) stands for dexterity for skills, physical rolls and counter maneuvers (IQ) determines intelligence and perception rolls, (HT) determines health rolls and how much damage the can take before dying.
+				 
+				 //Dice Roll Function
+						   //to play GURPS, player and DM will roll a 3D6 to determine action outcomes
+				function RollDiceThreeTimes ()
+				//Generate a random number between 1 and 6 (inclusive) 
+				//Roll three dice three times, add up values to see if a role was successful or failed
+				const roll 3D6 = roll() + roll() + roll() 
+				// if roll is a (1,1,1) or (1,1,2) the roll is critical success, if roll is (6,6,6) then the roll is a critical failure 
+				console.log (“you rolled a 3D6, and got…”, rollD6()) 
+				// if role is below skill threshold, the role is successful, if role is past skill threshold the role is a failure 
+				
+				//User input function 
+						  function RollDiceThreeTimes ()
+				//alternate turns between user and computer. 
+				// if the user role is at or below their skill level, their role is success. If user role is more
+						   than their skill level the role is unsuccessful 
+						  // Validate user input, if player is attacking a NPC with a weapon their success is  
+							determined by the skill level of their DX, if user DX skill is 14 and player rolls a 10 the     
+						   role is successful 
+				console.log (“you rolled a 3D6, and got…”, rollD6()) 
+				// evaluate computer possibilities, dodge, block from user actions. 
+				   //determine and summarize from events and proceed 
+				//computer choose next action, NPC attacks user or NPC moves
+				// alternate between player and use after each role/ action turn
+			</pre></code>
+		</div>
+		
+		<div class="minor-section">
+			<h2>Javascript Screenshot</h2>
+			<img id="lab4_javacode_screenshot" src="lab4_javacode_screenshot.jpg"/>
+		</div> 
+        
+		<div class="minor-section">
+			<h2>Homepage Link</h2>
+			<nav id="links">
+			<a href="../index.html">Homepage</a>
+			</div>
+			</nav>
+
 	</main>
 </body>
 </html>
