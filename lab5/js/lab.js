@@ -1,6 +1,6 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Demonstate an understanding of Javascript by creating a listing cars and their variables such as model, color and year.
+// Author: Austin Allen
+// Date: 04/23/2025
 
 // Constants
 
