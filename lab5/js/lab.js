@@ -1,4 +1,4 @@
-// index.js - Demonstate an understanding of Javascript by creating a listing cars and their variables such as model, color and year.
+// index.js - Demonstate an understanding of Javascript by creating a listing of a car and its variables such as model, color and year.
 // Author: Austin Allen
 // Date: 04/23/2025
 

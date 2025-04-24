@@ -8,9 +8,15 @@
     background-color: #eae5ea;
   }
 
+#lab5_js_code_screenshot{
+  width: 425px;
+}
+#lab5_task1_screenshot{
+  width: 400px;
+}
+
 #lab5_jeep_screenshot{
   width: 300px;
-  display: block;
-  margin-left: auto;
   margin-right: auto;
-}
+  }
+  
