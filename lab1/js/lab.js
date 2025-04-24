@@ -19,3 +19,15 @@ function main() {
 
 // let's get this party started
 main();
+
+
+let points=0;
+
+ points=6;
+
+ points=54;
+
+ let pointsMessage="Your current score is" + points; 
+
+ console.log(pointsMessage);
+
