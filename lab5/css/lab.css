@@ -16,7 +16,9 @@
 }
 
 #lab5_jeep_screenshot{
-  width: 300px;
-  margin-right: auto;
+  padding: 10px;
+  width: 400px;
+  /* Push image to the right */
+  margin-right:auto;
   }
   
