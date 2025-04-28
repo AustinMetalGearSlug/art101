@@ -1,4 +1,4 @@
-// index.js - Demonstrate how to use console variables 
+// index.js - Demonstrate how to use and create object variables and arrays in Javascript 
 // Author: Austin Allen
 // Date: 04/27/2025
 
@@ -27,7 +27,7 @@ function myFunction(param1, param2) {
 }
 
 function main() {
-  console.log("Main function started.");
+  console.log("My Dream Ride");
   // the code that makes everything happen
 }
 
