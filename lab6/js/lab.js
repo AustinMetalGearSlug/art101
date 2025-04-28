@@ -4,7 +4,7 @@
 
 //Define Variables
 
-myDreamCar = ["Chevy"];
+myDreamCar = ["Chevy Malibu 1973"];
 
 // this is an example function and this comment tells what it doees and what parameters are passed to it.
 function myFunction(param1, param2) {
@@ -28,13 +28,13 @@ myDreamCar = {
   transmission: "Muncie M20", 
   engine: "V8", 
   year: "1973",
+  reason: "Drive 2011",
   age: function() {
       return 2025 - this.year;
   }
 }
 
 //output 
-document.writeln("Kind ofCar Want to Drive: ", myDreamCar, "</b>");
-
-document.writeln("myDreamCar: <pre>",
+document.writeln("Kind of Car I Want to Drive: ", myDreamCar.make, " ", myDreamCar.model, " ", myDreamCar.year,"</b>");
+document.writeln("<pre>",
   JSON.stringify (myDreamCar, null, '\t'), "</p>");
