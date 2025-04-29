@@ -2,6 +2,4 @@
 // Author: Austin Allen
 // Date: 04/28/2025
 
-
-
-
+//define variables 
