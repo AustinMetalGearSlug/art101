@@ -20,5 +20,6 @@ return nameSorted;
 }
 
 //output
-document.writeln("Look!, I made your name better!, hello:",)
-    sortUserName(), "</br>";
+document.writeln("Look!, I made your name better!, hello:",sortUserName(), "</br>");
+
+
