@@ -4,9 +4,10 @@
 
 //sortUserName - create a function that takes user input and resorts their name
 
-function sortUserName(){
-    var userName = window.prompt("Hello, please tell me your full name");
+function randomCodeName(){
+    var userName = window.prompt("Welcome to Outer Heaven, please tell me your full name solider");
 console.log("userName =", userName);
+
     //split string to array 
     var nameArray = userName.split('');
     console.log ("nameArray =", nameArray);
@@ -20,6 +21,6 @@ return nameSorted;
 }
 
 //output
-document.writeln("Look!, I made your name better!, hello:",sortUserName(), "</br>");
+document.writeln("This is your new code name, welcome to Outer Heaven:",sortUserName(), "</br>");
 
 
