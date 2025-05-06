@@ -19,6 +19,14 @@ var result = array.map(isEven);
 //should return [true, false, true, false, false]
 console.log("Test of eveness of array:" , result); 
 
+ // Your map results data
+ var mapResults = "Your map results here";
+
+ // Use jQuery to select the element by its ID and set the HTML content
+ $("#output").html(mapResults);
+ 
+ 
+
 var result = array.map(function(x){
     return x ** 0.5;
 })
