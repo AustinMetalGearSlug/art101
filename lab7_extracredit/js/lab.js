@@ -26,7 +26,7 @@ function sortUserName(){
    const randPrefix = prefix[Math.floor(Math.random() * prefix.length)];
    const randSuffix = suffix[Math.floor(Math.random() * suffix.length)];
 
-   return `${randPrefix} ${firstName} ${ranSuffix} ${lastName}`;
+   return `${randPrefix} ${firstName} ${randSuffix} ${lastName}`;
 }
 
 //output
