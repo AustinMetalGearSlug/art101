@@ -5,7 +5,7 @@ function sortUserName(){
     var userName = window.prompt("Hello, please tell me your full name");
 
     const prefix = ["Liberty", "Combat", "Solid", "Whiskey", "Screaming", "Battle"];
-    const suffix = ["Snake", "Fox", "Capybara", "Cat", "Quite", "Hound"];
+    const suffix = ["Snake", "Fox", "Capybara", "Cat", "Ocelot", "Hound"];
 
     // Split full name into words (assuming first and last name)
     var namesArray = userName.split(' ');  
