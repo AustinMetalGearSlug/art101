@@ -2,31 +2,21 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: solid 1px #2f2f2f;
     background-color: #eae5ea;
-  }
+}
 
 #imgbigboss_gif{
   padding: 10px;
-  width: 400px;
+  width: 100px;
 }
 
-  body{
+ body{
     padding: 10px;
-  }
-
-  .parallax {
-    /* The image used */
-    background-image: url('mgsbg.jpg');
-  
-    /* Set a specific height */
-    min-height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('img/mgsbg.jpg');
+    background-size: cover; /* Scales image to cover the entire background */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-position: center center; /* Centers the image */
   }

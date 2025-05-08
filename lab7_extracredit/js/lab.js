@@ -2,7 +2,7 @@
 
 
 function sortUserName(){
-    var userName = window.prompt("Hello, please tell me your full name");
+    var userName = window.prompt("Welcome to Outer Heaven, give your full name");
 
     const prefix = ["Liberty", "Combat", "Solid", "Whiskey", "Screaming", "Battle"];
     const suffix = ["Snake", "Fox", "Capybara", "Cat", "Ocelot", "Hound"];
@@ -26,8 +26,8 @@ function sortUserName(){
    const randPrefix = prefix[Math.floor(Math.random() * prefix.length)];
    const randSuffix = suffix[Math.floor(Math.random() * suffix.length)];
 
-   return `${randPrefix} ${firstName} ${randSuffix} ${lastName}`;
+   return `${randPrefix} ${randSuffix}`;
 }
 
 //output
-document.writeln("Look!, I made your name better!, hello:",sortUserName(), "</br>");
+document.writeln("Here is your code name. Welcome to Mother Base...",sortUserName(), "</br>");
