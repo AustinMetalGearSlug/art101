@@ -8,14 +8,6 @@
     background-color: #88899029;
 }
 
-#content {
-  margin: 10px;
-  padding: 10px;
-  border: solid 1px #b8b2b5;
-  background-color: #afabab00;
-}
-
-
 #imgbigboss_gif{
   padding: 10px;
   width: 100px;
@@ -24,7 +16,7 @@
 
 body {
   padding: 1px;
-  background-color: rgba(173, 174, 177, 0.171);
+  background-color: rgb(63, 69, 86);
   background-image: url('imgmgsbg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
