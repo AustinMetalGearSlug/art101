@@ -18,8 +18,6 @@ function fDoColors(color){
 
    console.log(newColor);
 
-   $("#output").append(newColor);
-
 }
 
 //fDoColors("yellow");
