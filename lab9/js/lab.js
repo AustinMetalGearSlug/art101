@@ -1,27 +1,10 @@
-var index=1;
+/*
+   lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
 
-let aColors=["purple", "red", "green", "yellow"];
+   Requirements: jQuery must be loaded for this script to work.
 
-function fDoColors(color){ 
+   Author: Austin Allrn (Maverick)
+   Date: 05/08/2025 
+*/
 
-    //$ means jqueary, "()" mean a function, # stands for CSS, used to choose the id, cuh as id=output
-    // thing # as "id = "
-    // "color" is a virable name 
 
- $("#output").css("background",color);
-   console.log(color);
-
-   let newColor=color+aColors[index];
-
- //"=", defining the variable
- index=index+1;
-
-   console.log(newColor);
-
-   $("#output").append(newColor);
-
-}
-
-//fDoColors("yellow");
-
-aColors.map(fDoColors); 
