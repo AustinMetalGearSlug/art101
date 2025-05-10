@@ -7,13 +7,13 @@
    Date: 05/08/2025 
 */
 
-//add button to "What ever you do...don't pust this button or you'll become invsibible"
+//add button to #challenge
 $('#challenge').append("<button id='button-challenge'>Da Button</button>");
 
-//add a click listener to the invisible button 
-$(".button-challnge").click(function){
+//add a click listener to the button by ID
+$(".button-challenge").click(function()) {
  // now add (or subtract) the "special" class to the section
     $("#challenge").toggleClass("special");
-}
+});
 
 
