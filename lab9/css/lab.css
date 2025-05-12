@@ -14,5 +14,10 @@ h1, h2, h3 {
 
 #imgduranduran_gif{
   padding: 10px;
-  width: 100px;
+  width: 200px;
+}
+
+/* create a blue dash border */
+#challenge.special {
+  border: dashed 5px #1F4373;
 }

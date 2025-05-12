@@ -8,12 +8,3 @@
 */
 
 //add button to #challenge
-$('#challenge').append("<button id='button-challenge'>Da Button</button>");
-
-//add a click listener to the button by ID
-$(".button-challenge").click(function()) {
- // now add (or subtract) the "special" class to the section
-    $("#challenge").toggleClass("special");
-});
-
-
