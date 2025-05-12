@@ -7,6 +7,8 @@
    Date: 05/08/2025 
 */
 
+//add button to create a border around lab challenge 
+
 //add button to results
 $(document).ready(function() {
   $('#hide').click(function() {
@@ -15,5 +17,11 @@ $(document).ready(function() {
 
   $('#show').click(function() {
     $('#resultText').show();
+  });
+});
+
+//add button to make turn user invisbible 
+$(document).ready(function(){
+  $("#flip").click(function(){
   });
 });
