@@ -17,9 +17,9 @@ h1, h2, h3 {
   width: 200px;
 }
 
-.highlight {
-  border: 3px solid #c9ab41; /* Blue border */
-  padding: 10px; /* Optional: Adds spacing inside the border */
-  border-radius: 5px; /* Optional: Rounds the corners */
+.button-press{
+  border: 5px solid #c9ab41; 
+  padding: 10px;
+  border-radius: 5px; 
 }
 
