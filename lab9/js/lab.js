@@ -8,9 +8,14 @@
 */
 
 //add button to create a border around lab challenge 
+$('#challenge').click(function() {
+    //now add (or subtract) the "special" class to the section
+  $('#challengeSection').toggleClass('highlight');
+});
+
 
 //add button to results
-$(document).ready(function() {
+$("result").ready(function() {
   $('#hide').click(function() {
     $('#resultText').hide();
   });
