@@ -21,7 +21,3 @@ $(document).ready(function() {
 });
 
 //add button to make turn user invisbible 
-$(document).ready(function(){
-  $("#flip").click(function(){
-  });
-});
