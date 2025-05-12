@@ -7,4 +7,13 @@
    Date: 05/08/2025 
 */
 
-//add button to #challenge
+//add button to results
+$(document).ready(function() {
+  $('#hide').click(function() {
+    $('#resultText').hide();
+  });
+
+  $('#show').click(function() {
+    $('#resultText').show();
+  });
+});
