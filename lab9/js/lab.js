@@ -8,9 +8,9 @@
 */
 
 //add button to create a border around lab challenge 
-$(".button-press").append("<button class='button-challenge'>Make Special</button>");
+$(".challenge").append("<button class='button-challenge'>Make Special</button>");
 // add a click listener to the challenge button
-  $(".button-challenge").click(function(){
+  $(".challenge").click(function(){
     $(this).parent().toggleClass("special");
     
   });
