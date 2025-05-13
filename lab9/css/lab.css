@@ -12,14 +12,16 @@ h1, h2, h3 {
     font-family: Georgia;
 }
 
-#imgduranduran_gif{
-  padding: 10px;
-  width: 200px;
-}
+  #lab9_code{
+    width: 800px;
+    padding-top:10px;
+    padding-left: 10px;
+  }
 
 .special {
   border: 5px solid #c9ab41; 
   padding: 10px;
   border-radius: 5px; 
 }
+
 

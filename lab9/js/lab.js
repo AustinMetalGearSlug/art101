@@ -17,7 +17,7 @@ $(".button-press").append("<button class='button-challenge'>Make Special</button
 
     
 //add button to results
-$("result").ready(function() {
+$(document).ready(function() {
   $('#hide').click(function() {
     $('#resultText').hide();
   });
