@@ -11,7 +11,7 @@
 $(".button-press").append("<button class='button-challenge'>Make Special</button>");
 // add a click listener to the challenge button
   $(".button-press").click(function(){
-    $(this).parent().toggleClass("special");
+    $(this).toggleClass("special");
 
   });
 
