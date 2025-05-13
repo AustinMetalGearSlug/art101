@@ -29,10 +29,7 @@ $(document).ready(function() {
 
 // add button to make turn user invisible
 $(document).ready(function() {
-  // append the image to the container (but keep it hidden)
   $("#gifContainer").append('<img id="duranduranGif" src="img/duranduran.gif" alt="Duran Duran GIF" style="display:none;" />');
-
-  // show the GIF when button is clicked
   $("#showGifButton").click(function() {
     $("#duranduranGif").fadeIn();
   });
