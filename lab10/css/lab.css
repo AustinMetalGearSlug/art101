@@ -22,3 +22,14 @@ h1, h2, h3 {
     border: 2px solid rgb(136, 129, 129);
     border-radius: 5px;
   }
+
+  .dinochat-section{
+     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #dedbd7c3;
+    border: 2px solid rgb(136, 129, 129);
+    border-radius: 5px;
+  }
