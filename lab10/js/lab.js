@@ -2,13 +2,15 @@
 //Author: Austin Allen
 //Date: 05/15/2025 
 
+//use console log to test if any errors occur in the code 
+console.log("RAWR");
 
 //generate random text to respond to user input 
 function generateDinoRoar() {
-  const roars = "Rwar rawra rawww raahhhh reeggh grawarar roarra reeggh *snarl* rawwwaaa rawr grawarar gwarra gorra";
+  const roars = "Rwar rawra rawww raahhhh reeggh grawarar roarra ROAR reeggh *snarl* rawwwaaa rawr grawarar gwarra gorra";
   const roarWords = roars.split(" ");
   const min = 1;
-  const max = 5;
+  const max = 7;
   const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
 
     let result = [];
