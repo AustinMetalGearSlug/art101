@@ -12,6 +12,24 @@ h1, h2, h3 {
     font-family: Georgia;
 }
 
+.text:nth-child(odd) {
+  text-align: left;
+}
+
+.text:nth-child(odd) p {
+  background-color: rgb(233, 233, 233);
+  color: black;
+}
+
+.text:nth-child(even) {
+  text-align: right;
+}
+
+.text:nth-child(even) p {
+  background-color: #57b766;
+  color: white;
+}
+
 .dino-section {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -24,7 +42,6 @@ h1, h2, h3 {
   }
 
   .dinochat-section{
-     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
     margin-bottom: 10px;

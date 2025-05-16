@@ -23,3 +23,13 @@ function fDoColors(color){
 //fDoColors("yellow");
 
 aColors.map(fDoColors); 
+
+//Generate text box
+$("#action").click(
+
+ function(){
+    let
+userText=$("#textbox").val();
+  $("#output").append( "<p class=message>"+ userText );
+
+ });
