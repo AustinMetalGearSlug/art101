@@ -5,7 +5,7 @@
 
 //generate random text to respond to user input 
 function generateDinoRoar() {
-  const roars = "Rwar rawra rawww raahhhh reeggh *blink* grawarar roarra reeggh *snarl* rawwwaaa rawr grawarar";
+  const roars = "Rwar rawra rawww raahhhh reeggh grawarar roarra reeggh *snarl* rawwwaaa rawr grawarar gwarra gorra";
   const roarWords = roars.split(" ");
   const min = 1;
   const max = 5;

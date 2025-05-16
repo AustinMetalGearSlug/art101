@@ -12,6 +12,18 @@ h1, h2, h3 {
     font-family: Georgia;
 }
 
+h3{
+   font-weight: bold;
+   font-family: Georgia;
+}
+
+ #lab10code{
+    width: 800px;
+    padding-top:10px;
+    padding-left: 10px;
+  }
+
+
 .text:nth-child(odd) {
   text-align: left;
 }
