@@ -16,3 +16,13 @@ h3{
    font-weight: bold;
    font-family: Georgia;
 }
+
+
+.text:nth-child(odd) {
+  text-align: left;
+}
+
+.text:nth-child(odd) p {
+  background-color: rgb(233, 233, 233);
+  color: black;
+}
