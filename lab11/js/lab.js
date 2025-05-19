@@ -10,8 +10,8 @@ $("#action").click(function () {
   let userText = $("#textbox").val().trim(); // get input value and trim spaces
 
   function sortUserName(fullName) {
-    const prefix = ["Liberty", "Combat", "Solid", "Whiskey", "Screaming", "Battle"];
-    const suffix = ["Snake", "Fox", "Capybara", "Cat", "Ocelot", "Hound"];
+    const prefix = ["Carno", "Tyranno", "Bronto", "Makros", "Modes", "Stego", "Mammoth", "Titan", "Banana"];
+    const suffix = ["Raptor", "Saurus", "Rex", "Iguanodon", "Slug-asaurus", "Ceratops", "Mimus", "Nychus", "Deino"];
 
     const namesArray = fullName.split(" ");
     if (namesArray.length < 2) {
@@ -24,8 +24,8 @@ $("#action").click(function () {
     return `${randPrefix} ${randSuffix}`;
   }
 
-  const codeName = sortUserName(userText);
+  const dinoName = sortUserName(userText);
 
   // Replace output instead of appending
-  $("#output").html('<div class="text"><p>' + codeName + '</p></div>');
+  $("#output").html('<div class="text"><p>' + dinoName + '</p></div>');
 });
