@@ -38,3 +38,9 @@ h3 {
   max-width: 350px;        
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+#lab11_code{
+    width: 800px;
+    padding-top:10px;
+    padding-left: 10px;
+  }
