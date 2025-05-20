@@ -10,7 +10,7 @@ $("#action").click(function () {
   let userText = $("#textbox").val().trim(); // get input value and trim spaces
 
   function sortUserName(fullName) {
-    const prefix = ["Carno", "Tyranno", "Bronto", "Makros", "Modes", "Stego", "Mammoth", "Titan", "Banana Slug"];
+    const prefix = ["Carno", "Tyranno", "Bronto", "Makros", "Modes", "Stego", "Mammoth", "Titano", "Banana Slug"];
     const suffix = ["Raptor", "Saurus", "Rex", "Iguanodon", "asaurus", "Ceratops", "Mimus", "Nychus", "Deino"];
 
     const namesArray = fullName.split(" ");
