@@ -6,50 +6,42 @@ lab 12 - Using conditionals that will select an output based on a user's input b
 */
 
 //An array of dinosaurs. Variants for the function to select from
-let variants = [
- { name: "Spinosaurus", image: "img/lab12_spinosaurus.jpg" },
-  { name: "Acrocanthosaurus", image: "img/lab12_acrocanthosaurus.jpg" },
-  { name: "Utahraptor", image: "img/lab12_utahraptor.jpg" },
-  { name: "Tyrannosaurus Rex", image: "img/lab12_trex.jpg" },
-  { name: "Giganotosaurus", image: "img/lab12_giganotosaurus.jpg" },
-  { name: "Triceratops", image: "img/lab12_triceratops.jpg" },
-  { name: "Ankylosaurus", image: "img/lab12_ankylosaurus.jpg" },
-  { name: "Iguanodon", image: "img/lab12_iguanodon.jpg" },
-  { name: "Parasaurolophus", image: "img/lab12_parasaurolophus.jpg" }
-]
+let variants=["Yutyrannus", "Styracosaurus", "Anklyosaurus", "Carnotaurus"];
 
 
-//function that sorts dinosaurs from the variant array 
-
-function sortIntoDino(dataLength) {
-  let remainder = dataLength % variants.length;
-  let dino = variants[remainder];
-
-  $("#output").append(`
-    <p>*RAWR*... You are a... ${dino.name}</p>
-    <img src="${dino.image}" alt="${dino.name}" 
-         style="max-width: 300px; height: auto; border-radius: 10px;" />
-  `);
-}
-//function when click to generate output
-function whatHappensOnClick() {
-  console.log("click");
-
-  let data = $("#input").val();
-  let dataLength = data.length;
-
-  $("#output").html(""); 
-  // Clear previous output after
-
-  if (!data) {
-    $("#output").append("Please enter a name");
-  } else if (dataLength > 20) {
-    $("#output").append("Too much of a name");
-  } else {
-    $("#output").append(" " + data);
-    sortIntoDino(dataLength);
-    console.log("there is some data");
-  }
+function sortIntoDino( dataLength ) {
+  
+  let remainer=dataLength%4;  
+  $("#output").append("You are a "+variants[remainer]);
+  
 }
 
-$("#button").click(whatHappensOnClick);
+function whatHappensOnClick(){
+  
+    console.log("click");
+    
+    let data=$("#input").val();
+  
+    let dataLength=data.length;
+  
+    if ( data && dataLength<=12 ) {
+      
+      $("#output").append("You are a: " + data);
+      
+      sortIntoDino(dataLength);
+      
+      console.log("there is some data");
+      
+    }
+  
+    else if (dataLength>=12){
+     
+      $("#output").append("Too much of a name");
+    }
+    else {
+      
+      $("#output").append("Please enter a name");  
+    }
+}
+
+$("#button").click( whatHappensOnClick );
