@@ -8,9 +8,9 @@ lab 12 - Using conditionals that will select an output based on a user's input b
 //An array of dinosaurs. Variants for the function to select from
 let variants = [
  { name: "Spinosaurus", image: "img/lab12_spinosaurus.jpg" },
-  { name: "Acrocanthosaurus", image: "img/acrocanthosaurus.jpg" },
+  { name: "Acrocanthosaurus", image: "img/lab12_acrocanthosaurus.jpg" },
   { name: "Utahraptor", image: "img/lab12_utahraptor.jpg" },
-  { name: "Tyrannosaurus Rex", image: "imag/lab12_trex.jpg" },
+  { name: "Tyrannosaurus Rex", image: "img/lab12_trex.jpg" },
   { name: "Giganotosaurus", image: "img/lab12_giganotosaurus.jpg" },
   { name: "Triceratops", image: "img/lab12_triceratops.jpg" },
   { name: "Ankylosaurus", image: "img/lab12_ankylosaurus.jpg" },
@@ -23,9 +23,14 @@ let variants = [
 
 function sortIntoDino(dataLength) {
   let remainder = dataLength % variants.length;
-  $("#output").append(" .*RAWR*... You are a " + variants[remainder]);
-}
+  let dino = variants[remainder];
 
+  $("#output").append(`
+    <p>.*RAWR*... You are a <strong>${dino.name}</strong></p>
+    <img src="${dino.image}" alt="${dino.name}" 
+         style="max-width: 300px; height: auto; border-radius: 10px;" />
+  `);
+}
 //function when click to generate output
 function whatHappensOnClick() {
   console.log("click");
