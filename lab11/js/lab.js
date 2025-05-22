@@ -5,7 +5,7 @@
    Date: 05/17/2025 
 */
 
-// Sorts first and last name into a code name
+// Sorts first and last name into a dino name
 $("#action").click(function () {
   let userText = $("#textbox").val().trim(); // get input value and trim spaces
 
