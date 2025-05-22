@@ -8,6 +8,11 @@ lab 12 - Using conditionals that will select an output based on a user's input b
 //An array of Klingon Houses. Variants for the function to select from
 let variants=[" Martok ", " Gowron ", " Mogh ", " Grilka ", " Gorkon ", " K'mpec ", " Mo'Kai "];
 
+
+
+
+
+
 function sortHouse( dataLength ) {
   let remainer=dataLength%7;  
   $("#output").append(" ,you are now a member of House "+variants[remainer]+ ", Qapla'!!!");
