@@ -26,7 +26,7 @@ function sortIntoDino(dataLength) {
   let dino = variants[remainder];
 
   $("#output").append(`
-    <p>.*RAWR*... You are a <strong>${dino.name}</strong></p>
+    <p>*RAWR*... You are a... ${dino.name}</p>
     <img src="${dino.image}" alt="${dino.name}" 
          style="max-width: 300px; height: auto; border-radius: 10px;" />
   `);
