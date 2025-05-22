@@ -5,6 +5,4 @@ lab 12 - Using conditionals that will select an output based on a user's input b
    Date: 05/17/2025 
 */
 
-dinoArray =[
-
-]
+let variants = ["Spinosaurus", "Acrocanthosaurus", "Utahraptor", "Tyrannosaurus Rex", "Giganotosaurus", "Triceratops", "Ankylosaurus"]
