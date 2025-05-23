@@ -6,17 +6,25 @@ lab 12 - Using conditionals that will select an output based on a user's input b
 */
 
 //An array of Klingon Houses. Variants for the function to select from
-let variants=[" Martok ", " Gowron ", " Mogh ", " Grilka ", " Gorkon ", " K'mpec ", " Mo'Kai "];
+let variants=[
+  { name: "Martok", image: "img/lab12_housemartok.png" },
+  { name: "Gowron", image: "img/lab12_housegowron.png" },
+  { name: "Mogh", image: "img/lab12_housemogh.png" },
+  { name: "Grilka", image: "img/lab12_housegrilka.png" },
+  { name: "Gorkon", image: "img/lab12_housegorkon.png" },
+  { name: "K'mpec", image: "img/lab12_housekmpec.png" },
+  { name: "Mo'Kai", image: "img/lab12_housemokai.png" },
+];
 
+function sortHouse(dataLength) {
+  let remainder = dataLength % 7;
+  let house = variants[remainder];
 
-
-
-
-
-function sortHouse( dataLength ) {
-  let remainer=dataLength%7;  
-  $("#output").append(" ,you are now a member of House "+variants[remainer]+ ", Qapla'!!!");
-  
+  $("#output").append(`
+    <p>You are now a member of House ${house.name}, Qapla'!!!</p>
+    <img src="${house.image}" alt="${house.name}"
+         style="max-width: 300px; height: auto; border-radius: 10px;" />
+  `);
 }
 
 function whatHappensOnClick(){
@@ -27,7 +35,7 @@ function whatHappensOnClick(){
      let dataLength=data.length;
 
        // Clear previous output
-  $("#output").html("");
+   $("#output").html("");
 
   // Check if the input is non-empty and its length is 18 characters or fewer.
      if (data && dataLength <= 18) {
