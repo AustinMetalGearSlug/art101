@@ -1,0 +1,18 @@
+.minor-section {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #eae5ea;
+    border: 2px solid rgb(136, 129, 129);
+    border-radius: 5px;
+  }
+
+h1, h2, h3 {
+    font-family: Georgia;
+}
+
+h3 {
+  font-weight: bold;
+  font-family: Georgia;
+}
