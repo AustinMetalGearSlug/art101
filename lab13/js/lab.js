@@ -5,12 +5,10 @@ lab 13 - Using loops to print "Race Car" for multiplies of 2, 6, and 12 instead 
    Date: 05/24/2025 
 */
 
-
-
 // Use a for loop to print all the numbers from 1 to 100. Test and debug.
 for (let i = 1; i <= 100; i++) {
   // For numbers which are multiples of both 2 and 6, print “Race Car” instead.
-  if(i % 15 == 0) {
+  if(i % 12 == 0) {
     console.log("Race Car!");
     
   }
@@ -29,3 +27,4 @@ for (let i = 1; i <= 100; i++) {
   }
   
 }
+const outputDiv = document.getElementById("output");
