@@ -29,7 +29,6 @@ function whatHappensOnClick() {
     }
   }
 
-  // Attach the click event using jQuery
   $(document).ready(function () {
     $("#button").click(whatHappensOnClick);
   });
