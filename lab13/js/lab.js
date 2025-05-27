@@ -1,5 +1,5 @@
 /*
-lab 13 - Using loops to print "Race Car" for multiplies of 2, 6, and 12 instead of a number
+lab 13 - Using loops to print "Pizza Da Hutt" for multiplies of 2, 6, and 12 instead of a number
    Requirements: Create a loop function that prints "Pizza Da Hutt" instead of number and prints from 1 to 100
    Author: Austin Allen 
    Date: 05/24/2025 
