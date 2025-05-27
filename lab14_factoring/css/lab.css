@@ -21,19 +21,10 @@
   }
 
 h1, h2, h3 {
-    font-family: Georgia;
-}
-
-h1{
    font-family:'Trebuchet MS';
    color: #7CAB93;
    font-weight: bold;
    text-align: center;
-}
-
-h3 {
-  font-weight: bold;
-  font-family: Georgia;
 }
 
 body{
@@ -45,3 +36,4 @@ body{
   max-width: 100%;
   height: auto;
 }
+
