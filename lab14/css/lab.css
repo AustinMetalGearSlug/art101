@@ -16,3 +16,19 @@ h3 {
   font-weight: bold;
   font-family: Georgia;
 }
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #218838;
+}
