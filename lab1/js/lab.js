@@ -31,3 +31,20 @@ let points=0;
 
  console.log(pointsMessage);
 
+$('.accordion-header').click(function() {
+      const body = $(this).next('.accordion-body');
+      const icon = $(this).find('.icon');
+
+      // Close other sections
+      $('.accordion-body').not(body).slideUp().removeClass('open');
+      $('.accordion-header .icon').not(icon).text('+');
+
+      // Toggle current section
+      if (body.hasClass('open')) {
+        body.slideUp().removeClass('open');
+        icon.text('+');
+      } else {
+        body.slideDown().addClass('open');
+        icon.text('−');
+      }
+    });
