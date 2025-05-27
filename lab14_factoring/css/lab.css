@@ -1,10 +1,22 @@
-.minor-section {
+
+  .code-section{
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #eae5ea;
-    border: 2px solid rgb(136, 129, 129);
+    border: solid 5px #7CAB93;
+    color: #7CAB93;
+    background-color: #1e1d1d;
+    border-radius: 5px;
+  }
+
+  .text-section{
+    margin-right: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: solid 5px #7CAB93;
+    color: #7CAB93;
+    background-color: #1e1d1d;
     border-radius: 5px;
   }
 
@@ -12,7 +24,24 @@ h1, h2, h3 {
     font-family: Georgia;
 }
 
+h1{
+   font-family:'Trebuchet MS';
+   color: #7CAB93;
+   font-weight: bold;
+   text-align: center;
+}
+
 h3 {
   font-weight: bold;
   font-family: Georgia;
+}
+
+body{
+  background-color: #1d1c1c;
+}
+#gifContainer img {
+  display: none;          
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
 }
