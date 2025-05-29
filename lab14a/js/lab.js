@@ -5,52 +5,66 @@ lab 14 - Debug and refactor a previous lab
    Date: 05/27/2025 
 */
 //variants are based on the user input length
-let variants=[
-  { name: "Foxhound", image: "img/lab_snake_foxhound.png" },
-  { name: "Diamond Dogs", image: "img/lab_snake_dd.png" },
-  { name: "Desperado", image: "img/lab_snake_desperado.png" },
-  { name: "Diamond Dogs", image: "img/lab_snake_dd.png" },
-  { name: "Foxhound", image: "img/lab_snake_foxhound.png" },
-  { name: "Diamond Dogs", image: "img/lab_snake_dd.png" },
+let variants = [
+  { name: "Foxhound", image: "img/lab14a_foxhound.png" },
+  { name: "Diamond Dogs", image: "img/lab14a_dd.png" },
+  { name: "Desperado", image: "img/lab14a_desperado.png" },
 ];
 
-//assign user input based on their name length and assign them to team
+function sortUserName(fullName) {
+  const prefix = ["Liberty", "Combat", "Solid", "Whiskey", "Screaming", "Battle"];
+  const suffix = ["Snake", "Fox", "Capybara", "Cat", "Ocelot", "Hound"];
+
+  let namesArray = fullName.trim().split(" ");
+  if (namesArray.length < 2) {
+    return null; // Indicate bad input
+  }
+
+  const randPrefix = prefix[Math.floor(Math.random() * prefix.length)];
+  const randSuffix = suffix[Math.floor(Math.random() * suffix.length)];
+
+  return `${randPrefix} ${randSuffix}`;
+}
+
 function sortTeam(dataLength) {
-  let remainder = dataLength % 7;
+  let remainder = dataLength % variants.length;
   let team = variants[remainder];
 
   $("#output").append(`
-    <p>You are now a member of the unit ${team.name}, </p>
+    <p>You are now a member of the unit <strong>${team.name}</strong>.</p>
     <img src="${team.image}" alt="${team.name}"
          style="max-width: 300px; height: auto; border-radius: 10px;" />
   `);
 }
 
-function whatHappensOnClick(){
-  
-    console.log("click");
-    
-     let data=$("#input").val();
-     let dataLength=data.length;
+function whatHappensOnClick() {
+  let data = $("#input").val();
+  let dataLength = data.length;
 
-       // Clear previous output
-   $("#output").html("");
+  $("#output").html(""); // clear previous output
 
-  // Check if the input is non-empty and its length is 18 characters or fewer.
-     if (data && dataLength <= 18) {
-      $("#output").append(" Colonel...kept you waiting huh?...whose this a new recurit or a rival PMC?... " + data);
+  if (data && dataLength <= 18) {
+    let codeName = sortUserName(data);
 
-      sortTeam(dataLength);    
-      console.log("there is some data");
+    if (!codeName) {
+      $("#output").append(" Soldier, we need both first and last names!");
+      return;
     }
-   // If the input is too long (more than 18 characters), warn the user.
-     else if (dataLength>=18){
-      $("#output").append(" Attention soilder we do not have enough data ");
-    }
-    //If the user dosent enter a input, warn the user
-    else {
-      $("#output").append(" Soilder!!!...Enter your name that is a order");  
-    }
+
+    $("#output").append(`
+      <p>Colonel... kept you waiting, huh? A new recruit? Or a rival PMC? <strong>${codeName}</strong></p>
+      <p>Your codename is: <strong>${codeName}</strong></p>
+    `);
+
+    sortTeam(dataLength);
+    console.log("Codename assigned:", codeName);
+
+  } else if (dataLength >= 18) {
+    $("#output").append(" Attention soldier, we do not have enough data.");
+  } else {
+    $("#output").append(" Soldier!!!... Enter your name. That's an order!");
+  }
 }
 
-$("#button").click( whatHappensOnClick );
+$("#button").click(whatHappensOnClick);
+
