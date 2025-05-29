@@ -4,6 +4,3 @@ lab 14 - Debug and refactor a previous lab
    Author: Austin Allen 
    Date: 05/27/2025 
 */
-document.getElementById("button").addEventListener("click", function() {
-        window.location.href = "lab14_factoring.html";
-    });
