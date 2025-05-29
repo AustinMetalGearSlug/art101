@@ -50,6 +50,8 @@ function whatHappensOnClick() {
       $("#output").append(" Soldier, we need both first and last names thats an ORDER!");
       return;
     }
+      // Show Snake section, show snake-section after user enters input
+    document.getElementById("snakeSection").style.display = "block";
 
     $("#output").append(`
       <p>Colonel... kept you waiting, huh? A new recruit? Or a rival PMC? <strong>${data}</strong></p>
