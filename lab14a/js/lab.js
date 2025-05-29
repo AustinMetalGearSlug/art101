@@ -12,8 +12,8 @@ let variants = [
 ];
 
 function sortUserName(fullName) {
-  const prefix = ["Liberty", "Combat", "Solid", "Whiskey", "Screaming", "Battle"];
-  const suffix = ["Snake", "Fox", "Capybara", "Cat", "Ocelot", "Hound"];
+  const prefix = ["Liberty", "Combat", "Solid", "Whiskey", "Screaming", "Battle", "Quite", "Duran"];
+  const suffix = ["Snake", "Fox", "Capybara", "Cat", "Ocelot", "Hound", "Duran", "Boss", "Octopus", "Raven", "Slug"];
 
   let namesArray = fullName.trim().split(" ");
   if (namesArray.length < 2) {
@@ -47,12 +47,12 @@ function whatHappensOnClick() {
     let codeName = sortUserName(data);
 
     if (!codeName) {
-      $("#output").append(" Soldier, we need both first and last names!");
+      $("#output").append(" Soldier, we need both first and last names thats an ORDER!");
       return;
     }
 
     $("#output").append(`
-      <p>Colonel... kept you waiting, huh? A new recruit? Or a rival PMC? <strong>${codeName}</strong></p>
+      <p>Colonel... kept you waiting, huh? A new recruit? Or a rival PMC? <strong>${data}</strong></p>
       <p>Your codename is: <strong>${codeName}</strong></p>
     `);
 
@@ -67,4 +67,3 @@ function whatHappensOnClick() {
 }
 
 $("#button").click(whatHappensOnClick);
-
