@@ -17,7 +17,34 @@
     background-color: #1e1d1d;
     border-radius: 5px;
  }
+
   .text-section{
+  font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 5px #7CAB93;
+    color: #7CAB93;
+    background-color: #1e1d1d;
+    border-radius: 5px;
+ }
+
+  .codec-section{
+    margin-right: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 5px #7CAB93;
+    color: #7CAB93;
+    background-color: #1e1d1d;
+    border-radius: 5px;
+    display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 2rem;
+   margin-top: 10px;
+  }
+
+  .gif-box{
     margin-right: 1px;
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
@@ -26,6 +53,7 @@
     color: #7CAB93;
     background-color: #1e1d1d;
     border-radius: 5px;
+    max-width: 100%;
   }
 
 h1, h2, h3 {
@@ -38,9 +66,23 @@ h1, h2, h3 {
 body{
   background-color: #1d1c1c;
 }
-#gifContainer img {
+
+#campbell_gif{
+    display: none;          
+   margin-top: 20px;
+   max-width: 100%;
+   height: auto;
+   padding: 10px;
+    margin-bottom: 5px;
+    border: solid 5px #7CAB93;
+    border-radius: 5px;
+}
+
+#snake_gif{
   display: none;          
   margin-top: 20px;
   max-width: 100%;
   height: auto;
 }
+
+  

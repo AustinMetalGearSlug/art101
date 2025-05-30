@@ -6,14 +6,17 @@ lab 14 - Debug and refactor a previous lab
 */
 //variants are based on the user input length
 let variants = [
-  { name: "Foxhound", image: "img/lab14a_foxhound.png" },
-  { name: "Diamond Dogs", image: "img/lab14a_dd.png" },
-  { name: "Desperado", image: "img/lab14a_desperado.png" },
+   { name: "Diamond Dogs", image: "img/dd.png" },
+  { name: "Foxhound", image: "img/foxhoundunit.png" },
+  { name: "Desperado", image: "img/desperado.png" },
+  { name: "Militaires sans Frontières", image: "img/noborders.png"},
+  { name: "XOF", image: "img/xof.png"},
+  { name: "Clawing Ocelot", image: "img/ocelot.png"}
 ];
 
 function sortUserName(fullName) {
-  const prefix = ["Liberty", "Combat", "Solid", "Whiskey", "Screaming", "Battle", "Quite", "Duran"];
-  const suffix = ["Snake", "Fox", "Capybara", "Cat", "Ocelot", "Hound", "Duran", "Boss", "Octopus", "Raven", "Slug"];
+  const prefix = ["Liberty", "Combat", "Solid", "Whiskey", "Screaming", "Battle", "Quite", "Duran", "Psyhco", "Liquid", "Sniper"];
+  const suffix = ["Snake", "Fox", "Capybara", "Cat", "Ocelot", "Hound", "Duran", "Boss", "Octopus", "Raven", "Slug", "Wolf"];
 
   let namesArray = fullName.trim().split(" ");
   if (namesArray.length < 2) {
@@ -54,7 +57,7 @@ function whatHappensOnClick() {
     document.getElementById("snakeSection").style.display = "block";
 
     $("#output").append(`
-      <p>Colonel... kept you waiting, huh? A new recruit? Or a rival PMC? <strong>${data}</strong></p>
+      <p>Colonel... kept you waiting huh?, A new recruit? Or a rival PMC? <strong>${data}</strong></p>
       <p>Your codename is: <strong>${codeName}</strong></p>
     `);
 
