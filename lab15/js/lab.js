@@ -5,6 +5,8 @@ lab 15 - AJAX
    Date: 05/30/2025 
 */
 
+//use AJAX to connect to yesno.wtf/api
+
 // Go to https://yesno.wtf/api
 
 const ajaxObj = {
