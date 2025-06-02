@@ -15,7 +15,7 @@ lab 15 - AJAX
         .done(function (html) {
           console.log("Wheres the Dinos!");
          // Display the HTML response
-          $('#some-awesome-container').html(html);
+          $('#button').html(html);
         })
         .fail(function (xhr, status, errorThrown) {
           console.log("Error: " + errorThrown + " Status: " + status);
