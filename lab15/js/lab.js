@@ -5,7 +5,7 @@ lab 15 - AJAX
    Date: 05/30/2025 
 */
 
-//use AJAX to connect to yesno.wtf/api
+//use AJAX to connect to dinoipsum.com/api
  // When a user clicks the button
     $("button").click(function () {
       console.log("Button clicked!");
