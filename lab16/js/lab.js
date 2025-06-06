@@ -5,7 +5,7 @@ lab 16 - JSON and APIs
    Date: 06/05/2025 
 */
 
-$("#getComic").click(function () {
+$("#ajaxComic").click(function () {
   // initialize variable
   var maxNum;
   var newURL;
@@ -33,13 +33,15 @@ $("#getComic").click(function () {
           $("#output").append("<img src='" + imageURL + "' alt='" + imageAlt + "'>");
           $("#output").append("<p>" + imageAlt + "</p>");
         },
+        //error if comic cannot load
         error: function (jqXHR, textStatus, errorThrown) {
-          console.log("Error loading random comic:", textStatus, errorThrown);
+          console.log("Error :", textStatus, errorThrown);
         }
       });
     },
+    //error if not able to get latest comic
     error: function (jqXHR, textStatus, errorThrown) {
-      console.log("Error getting latest comic number:", textStatus, errorThrown);
+      console.log("Error getting comic :", textStatus, errorThrown);
     }
   });
 });
