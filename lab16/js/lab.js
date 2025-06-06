@@ -7,38 +7,75 @@ lab 16 - JSON and APIs
 
 // ajax object
 const ajaxObject = {
-  url: "https://api.nasa.gov/planetary/apod",
-  data: {
-    api_key: "YiD984R01LC5AYCSHKxgcPwkqtwXNMAcbD4JjZ2y",
-    count: 1
-  },
+  url: "https://xkcd.com/info.0.json",
+  data: {},
   type: "GET",
-  dataType: "JSON"
-}
+  dataType: "json"
+};
+// initialize variable
+var maxNum;
+var newURL;
 
-// button listener
-$("button").click(function(){
+// Using the core $.ajax() method
+$.ajax({
+    // The URL for the request (from the api docs)
+    url: "https://corsproxy.io/?https://xkcd.com/info.0.json",
+    // The data to send (will be converted to a query string)
+    data: {
+        // here is where any data required by the api 
+        //   goes (check the api docs)
+        // id: 123,
+        // api_key: "blahblahblah",
+    },
+    // Whether this is a POST or GET request
+    type: "GET",
+    // The type of data we expect back
+    dataType: "json",
+    // What do we do when the api call is successful
+    //   all the action goes in here
+    success: function (data) {
+        // do stuff
+        //console.log(data);
+        maxNum = data.num;
+        //console.log(maxNum);
+        newURL = "https://corsproxy.io/?https://xkcd.com/" + Math.floor(Math.random() * maxNum) + "/info.0.json";
 
-  // call ajax
-  $.ajax(ajaxObject)
-  // success callback
-  .done(function(data) {
-    console.log(data);
-    // pull out relevant data from results
-    let title = data[0].title;
-    let date = data[0].date;
-    let desc = data[0].explanation;
-    let imageUrl = data[0].url;
-    // but data in output
-    $("#output").html(`<h2>${title}</h2>`);
-    $("#output").append(`<img src='${imageUrl}' />`);
-    $("#output").append(`<p class='date'>${date}</p>`);
-    $("#output").append(`<p class='desc'>${desc}</p>`);
-  })
-  // fail callback
-  .fail(function(xhr, status, error) { 
-    // Error handler
-    console.error(error); 
-  })
-  
+        $.ajax({
+            // The URL for the request (from the api docs)
+            url: newURL,
+            // The data to send (will be converted to a query string)
+            data: {
+                // here is where any data required by the api 
+                //   goes (check the api docs)
+                // id: 123,
+                // api_key: "blahblahblah",
+            },
+            // Whether this is a POST or GET request
+            type: "GET",
+            // The type of data we expect back
+            dataType: "json",
+            // What do we do when the api call is successful
+            //   all the action goes in here
+            success: function (data) {
+                // do stuff
+                //console.log(data);
+                var titleText = data.title;
+                var imageURL = data.img;
+                var imageAlt = data.alt;
+                $("#output").html("<h3>" + titleText + "</h3>");
+                $("#output").append("<img src='" + imageURL + "'>");
+                $("#output").append("<p>" + imageAlt + "</p>");
+            },
+            // What we do if the api call fails
+            error: function (jqXHR, textStatus, errorThrown) {
+                // do stuff
+                console.log("Error:", textStatus, errorThrown);
+            }
+        })
+    },
+    // What we do if the api call fails
+    error: function (jqXHR, textStatus, errorThrown) {
+        // do stuff
+        console.log("Error:", textStatus, errorThrown);
+    }
 })
